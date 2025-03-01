@@ -14,7 +14,8 @@
   </head>
   <body>
     <main>
-      <video autoplay muted>
+      <div class="form-mask"></div>
+      <video autoplay muted loop>
         <source src="./assets/video.mp4" type="video/mp4" />
       </video>
       <header>
@@ -23,6 +24,7 @@
           src="./assets/logo-header.png"
           alt="logo-header-mario"
         />
+
         <nav>
           <a class="nav-link" href="#">Home</a>
           <a class="nav-link" href="#">Fale conosco</a>
@@ -48,11 +50,36 @@
           </p>
           <button class="main-button">Entre em contato</button>
         </div>
+
         <img
           class="main-image"
           src="./assets/mario.png"
           alt="irmaos-mario-e-luigi"
         />
+
+        <a
+          href="https://wa.me/5561987261721?text=Quero%20contatar%20os%20servi%C3%A7os%20dos%20irm%C3%A3os%20Mario!"
+          id="whatsapp-link"
+          target="_blank"
+        >
+          <img
+            src="./assets/whatsapp.png"
+            alt="link-whatsapp"
+            class="whatsapp-image"
+          />
+        </a>
+
+        <form id="form">
+          <div class="input-container">
+            <input class="form-input" type="text" placeholder="Seu nome" />
+            <input class="form-input" type="tel" placeholder="Seu telefone" />
+          </div>
+          <textarea
+            id="form-text"
+            placeholder="Fale sobre seu problema aqui..."
+          ></textarea>
+          <button class="form-button">Pedir orçamento</button>
+        </form>
       </section>
     </main>
   </body>
