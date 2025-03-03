@@ -69,16 +69,32 @@
           />
         </a>
 
-        <form id="form">
+        <form
+          id="form"
+          action="https://formcarry.com/s/vevCVmGCp7A"
+          method="post"
+          enctype="multipart/form-data"
+        >
           <div class="input-container">
-            <input class="form-input" type="text" placeholder="Seu nome" />
-            <input class="form-input" type="tel" placeholder="Seu telefone" />
+            <input
+              class="form-input"
+              name="name"
+              type="text"
+              placeholder="Seu nome"
+            />
+            <input
+              class="form-input"
+              name="telephone"
+              type="tel"
+              placeholder="Seu telefone"
+            />
           </div>
           <textarea
             id="form-text"
             placeholder="Fale sobre seu problema aqui..."
+            name="message"
           ></textarea>
-          <button class="form-button">Pedir orçamento</button>
+          <button class="form-button" type="submit">Pedir orçamento</button>
         </form>
       </section>
     </main>
